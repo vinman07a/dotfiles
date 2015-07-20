@@ -175,7 +175,10 @@ bar {
         position top
 }
 #set wallpaper
-exec --no-startup-id feh --bg-scale .config/i3/wallpaper.png
+exec --no-startup-id feh --bg-scale .config/i3/wallpaper.jpg
 
 #volume systray icon
 exec volumeicon
+
+#sart compton
+exec compton
