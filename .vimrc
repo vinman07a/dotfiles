@@ -21,7 +21,22 @@ Plugin 'Valloric/YouCompleteMe'
  
 Plugin 'joequery/Stupid-EasyMotion'
 
- 
+Plugin 'scrooloose/nerdtree' 
+
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'https://github.com/scrooloose/syntastic'
+
+Plugin 'helino/vim-nasm'
+
+Plugin 'pelodelfuego/vim-swoop'
+
+Plugin 'tyru/caw.vim'
+
+Plugin 'bling/vim-airline'
+
+Plugin 'vimwiki/vimwiki'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
