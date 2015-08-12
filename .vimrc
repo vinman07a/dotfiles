@@ -25,7 +25,7 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'tpope/vim-fugitive'
 
-Plugin 'https://github.com/scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 
 Plugin 'helino/vim-nasm'
 
@@ -36,6 +36,8 @@ Plugin 'tyru/caw.vim'
 Plugin 'bling/vim-airline'
 
 Plugin 'vimwiki/vimwiki'
+
+Plugin 'jtratner/vim-flavored-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -189,7 +191,16 @@ map <f7> :tabn<CR>
 set expandtab
 set tabstop=4
 set shiftwidth=4
- 
+
+"some wiki stuff 
+let wiki_settings={
+            \ 'template_path': 'vimwiki-assets/',
+            \ 'template_default': 'default',
+            \ 'template_ext': '.html',
+            \ 'auto_export': 0,
+            \ 'nested_syntaxes': {
+            \ 'js':'javascript' }}
+
 command! -nargs=1 -range SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
  
 command! -range=% -nargs=0 Tab2Space execute '<line1>,<line2>s#^\t\+#\=repeat(" ", len(submatch(0))*' . &ts . ')' 
