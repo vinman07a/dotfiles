@@ -318,6 +318,9 @@ let s:plug_cache = s:cache_for('plugged')
       Plug 'vimwiki/vimwiki'
       Plug 'jtratner/vim-flavored-markdown'
     " }}}
+      " IRC {{{
+      Plug 'vim-scripts/VimIRC.vim'
+    " }}}
     " Colors {{{
       " The best colorscheme, ever.
       Plug 'tomasr/molokai'
@@ -763,6 +766,7 @@ let s:plug_cache = s:cache_for('plugged')
 
     " Enable some syntax folding methods.
     let g:tex_fold_enabled=1
+    let g:tex_conceal = ""
     let g:vimsyn_folding='af'
     let g:xml_syntax_folding = 1
     let g:php_folding = 1
